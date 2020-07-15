@@ -1,0 +1,482 @@
+
+Regla para cambiar escala en los dibujos de la prensa, segun varia el tamaño de la maquina:
+InventorVb.DocumentUpdate()
+'Cambio de escala para cada tamaño de maquina'
+' 0 Ensamble general' 
+ActiveSheet = ThisDrawing.Sheet("Sheet:1")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA183").ScaleString = "1:15"
+ActiveSheet.View("VISTA187").ScaleString = "1:25"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA183").ScaleString = "1:15"
+ActiveSheet.View("VISTA187").ScaleString = "1:22"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA183").ScaleString = "1:10"
+ActiveSheet.View("VISTA187").ScaleString = "1:15"
+End If
+
+
+'1 Estructura'
+ActiveSheet = ThisDrawing.Sheet("Sheet:2")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA4").ScaleString = "1:20"
+ActiveSheet.View("VISTA2").ScaleString = "1:40"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA4").ScaleString = "1:20"
+ActiveSheet.View("VISTA2").ScaleString = "1:30"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA4").ScaleString = "1:15"
+ActiveSheet.View("VISTA2").ScaleString = "1:20"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:3")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA11").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA11").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA11").ScaleString = "1:5"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:4")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA15").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA15").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA15").ScaleString = "1:5"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:5")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA18").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA18").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA18").ScaleString = "1:5"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:6")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA21").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA21").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA21").ScaleString = "1:1"
+End If
+
+'2 Ensamble deslizador'
+ActiveSheet = ThisDrawing.Sheet("Sheet:7")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA23").ScaleString = "1:5"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA23").ScaleString = "1:5"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA23").ScaleString = "1:3"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:8")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA25").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA25").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA25").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:9")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA27").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA27").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA27").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:10")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA29").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA29").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA29").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:11")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA31").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA31").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA31").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:12")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA33").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA33").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA33").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:13")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA35").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA35").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA35").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:14")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA37").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA37").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA37").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:15")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA39").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA39").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA39").ScaleString = "2:1"
+End If
+
+'Ensamb Cubierta extracc'
+ActiveSheet = ThisDrawing.Sheet("Sheet:16")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA41").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA41").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA41").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:17")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA69").ScaleString = "1:4"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA69").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA69").ScaleString = "1:2"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:18")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA43").ScaleString = "1:20"
+ActiveSheet.View("VISTA52").ScaleString = "1:20"
+ActiveSheet.View("VISTA61").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA43").ScaleString = "1:20"
+ActiveSheet.View("VISTA52").ScaleString = "1:20"
+ActiveSheet.View("VISTA61").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA43").ScaleString = "1:15"
+ActiveSheet.View("VISTA52").ScaleString = "1:15"
+ActiveSheet.View("VISTA61").ScaleString = "1:15"
+End If
+
+'4 ensamble empuje mec'
+ActiveSheet = ThisDrawing.Sheet("Sheet:19")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA90").ScaleString = "1:5"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA90").ScaleString = "1:3"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA90").ScaleString = "1:3"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:20")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA75").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA75").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA75").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:21")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA77").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA77").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA77").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:22")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA79").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA79").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA79").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:23")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA81").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA81").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA81").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:24")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA83").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA83").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA83").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:25")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA85").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA85").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA85").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:26")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA88").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA88").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA88").ScaleString = "1:1"
+End If
+
+'5 placa empuje inferior'
+ActiveSheet = ThisDrawing.Sheet("Sheet:27")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA137").ScaleString = "1:10"
+ActiveSheet.View("VISTA139").ScaleString = "1:25"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA137").ScaleString = "1:10"
+ActiveSheet.View("VISTA139").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA137").ScaleString = "1:8"
+ActiveSheet.View("VISTA139").ScaleString = "1:15"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:28")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA94").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA94").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA94").ScaleString = "1:15"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:29")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA96").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA96").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA96").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:30")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA102").ScaleString = "1:15"
+ActiveSheet.View("VISTA103").ScaleString = "1:15"
+ActiveSheet.View("VISTA104").ScaleString = "1:15"
+ActiveSheet.View("VISTA105").ScaleString = "1:15"
+ActiveSheet.View("VISTA106").ScaleString = "1:15"
+ActiveSheet.View("VISTA107").ScaleString = "1:15"
+ActiveSheet.View("VISTA108").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA102").ScaleString = "1:15"
+ActiveSheet.View("VISTA103").ScaleString = "1:15"
+ActiveSheet.View("VISTA104").ScaleString = "1:15"
+ActiveSheet.View("VISTA105").ScaleString = "1:15"
+ActiveSheet.View("VISTA106").ScaleString = "1:15"
+ActiveSheet.View("VISTA107").ScaleString = "1:15"
+ActiveSheet.View("VISTA108").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA102").ScaleString = "1:10"
+ActiveSheet.View("VISTA103").ScaleString = "1:10"
+ActiveSheet.View("VISTA104").ScaleString = "1:10"
+ActiveSheet.View("VISTA105").ScaleString = "1:10"
+ActiveSheet.View("VISTA106").ScaleString = "1:10"
+ActiveSheet.View("VISTA107").ScaleString = "1:10"
+ActiveSheet.View("VISTA108").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:31")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA110").ScaleString = "1:15"
+ActiveSheet.View("VISTA111").ScaleString = "1:15"
+ActiveSheet.View("VISTA112").ScaleString = "1:15"
+ActiveSheet.View("VISTA113").ScaleString = "1:15"
+ActiveSheet.View("VISTA114").ScaleString = "1:15"
+ActiveSheet.View("VISTA115").ScaleString = "1:15"
+ActiveSheet.View("VISTA116").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA110").ScaleString = "1:15"
+ActiveSheet.View("VISTA111").ScaleString = "1:15"
+ActiveSheet.View("VISTA112").ScaleString = "1:15"
+ActiveSheet.View("VISTA113").ScaleString = "1:15"
+ActiveSheet.View("VISTA114").ScaleString = "1:15"
+ActiveSheet.View("VISTA115").ScaleString = "1:15"
+ActiveSheet.View("VISTA116").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA110").ScaleString = "1:10"
+ActiveSheet.View("VISTA111").ScaleString = "1:10"
+ActiveSheet.View("VISTA112").ScaleString = "1:10"
+ActiveSheet.View("VISTA113").ScaleString = "1:10"
+ActiveSheet.View("VISTA114").ScaleString = "1:10"
+ActiveSheet.View("VISTA115").ScaleString = "1:10"
+ActiveSheet.View("VISTA116").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:32")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA119").ScaleString = "1:2"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA119").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA119").ScaleString = "1:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:33")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA121").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA121").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA121").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:34")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA123").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA123").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA123").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:35")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA126").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA126").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA126").ScaleString = "2:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:36")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA128").ScaleString = "2:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA128").ScaleString = "2:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA128").ScaleString = "3:1"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:37")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA130").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA130").ScaleString = "1:1"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA130").ScaleString = "2:1"
+End If
+
+'6 placa empuje sup' 
+ActiveSheet = ThisDrawing.Sheet("Sheet:38")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA174").ScaleString = "1:10"
+ActiveSheet.View("VISTA177").ScaleString = "1:25"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA174").ScaleString = "1:10"
+ActiveSheet.View("VISTA177").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA174").ScaleString = "1:8"
+ActiveSheet.View("VISTA177").ScaleString = "1:15"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:39")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA142").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA142").ScaleString = "1:20"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA142").ScaleString = "1:15"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:40")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA146").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA146").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA146").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:41")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA148").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA148").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA148").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:42")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA156").ScaleString = "1:15"
+ActiveSheet.View("VISTA157").ScaleString = "1:15"
+ActiveSheet.View("VISTA158").ScaleString = "1:15"
+ActiveSheet.View("VISTA159").ScaleString = "1:15"
+ActiveSheet.View("VISTA160").ScaleString = "1:15"
+ActiveSheet.View("VISTA161").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA156").ScaleString = "1:10"
+ActiveSheet.View("VISTA157").ScaleString = "1:10"
+ActiveSheet.View("VISTA158").ScaleString = "1:10"
+ActiveSheet.View("VISTA159").ScaleString = "1:10"
+ActiveSheet.View("VISTA160").ScaleString = "1:10"
+ActiveSheet.View("VISTA161").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA156").ScaleString = "1:10"
+ActiveSheet.View("VISTA157").ScaleString = "1:10"
+ActiveSheet.View("VISTA158").ScaleString = "1:10"
+ActiveSheet.View("VISTA159").ScaleString = "1:10"
+ActiveSheet.View("VISTA160").ScaleString = "1:10"
+ActiveSheet.View("VISTA161").ScaleString = "1:10"
+End If
+
+ActiveSheet = ThisDrawing.Sheet("Sheet:43")
+If Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1.3 su  Then
+ActiveSheet.View("VISTA163").ScaleString = "1:15"
+ActiveSheet.View("VISTA164").ScaleString = "1:15"
+ActiveSheet.View("VISTA165").ScaleString = "1:15"
+ActiveSheet.View("VISTA166").ScaleString = "1:15"
+ActiveSheet.View("VISTA167").ScaleString = "1:15"
+ActiveSheet.View("VISTA168").ScaleString = "1:15"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 1 su Then
+ActiveSheet.View("VISTA163").ScaleString = "1:10"
+ActiveSheet.View("VISTA164").ScaleString = "1:10"
+ActiveSheet.View("VISTA165").ScaleString = "1:10"
+ActiveSheet.View("VISTA166").ScaleString = "1:10"
+ActiveSheet.View("VISTA167").ScaleString = "1:10"
+ActiveSheet.View("VISTA168").ScaleString = "1:10"
+ElseIf Parameter("1. Ensamble_Estructura.iam.EscalaX") = 0.75 su Then
+ActiveSheet.View("VISTA163").ScaleString = "1:10"
+ActiveSheet.View("VISTA164").ScaleString = "1:10"
+ActiveSheet.View("VISTA165").ScaleString = "1:10"
+ActiveSheet.View("VISTA166").ScaleString = "1:10"
+ActiveSheet.View("VISTA167").ScaleString = "1:10"
+ActiveSheet.View("VISTA168").ScaleString = "1:10"
+End If
