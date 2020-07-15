@@ -1,0 +1,37 @@
+Regla tamaños:
+
+
+If Ancho_ext_estruct < 1020 Then
+Component.IsActive("Soporte motor:3") = False
+Component.IsActive("Soporte motor:4") = False
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:5") = False
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:6") = False
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:7") = False
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:8") = False
+Component.IsActive("SHRPRO-V1 04 2,2kW Motor KR 373 L3E100L:2") = False
+Component.IsActive("Caja de Trituración:2") = False
+
+
+Else
+
+Component.IsActive("Soporte motor:3") = True
+Component.IsActive("Soporte motor:4") = True
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:5") = True
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:6") = True
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:7") = True
+Component.IsActive("SHRPRO-V1 1000.04-A Motor mounting plate_Dfaut:8") = True
+Component.IsActive("SHRPRO-V1 04 2,2kW Motor KR 373 L3E100L:2") = True
+Component.IsActive("Caja de Trituración:2") = True
+End If
+
+
+Regla Actualizar automaticamente:
+
+iLogicVb.UpdateWhenDone = True
+InventorVb.DocumentUpdate()
+InventorVb.CheckParameters(“”)
+
+Regla Abrir Planos:
+
+ThisDoc.Launch("C:\Users\MAPARE\Desktop\Trituradora\Planos\Trituradora.idw")
+
